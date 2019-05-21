@@ -17,19 +17,21 @@ namespace Hello
             }
 
         }
-
+        
         private static void ValueTypes()
         {
-            int maxInt = int.MaxValue;
-            int minInt = int.MinValue;
-            long maxLong = long.MaxValue;
-            long minLong = long.MinValue;
+            //  int maxInt = int.MaxValue;
+            // int minInt = int.MinValue;
+            // long maxLong = long.MaxValue;
+            // long minLong = long.MinValue;
 
-            Console.WriteLine("maxInt = " + maxInt);
-            Console.WriteLine("minInt = " + minInt);
-            Console.WriteLine("maxLong = " + maxLong);
-            Console.WriteLine("minLong = " + minLong);
+            // Console.WriteLine("maxInt = " + maxInt);
+            // Console.WriteLine("minInt = " + minInt);
+            // Console.WriteLine("maxLong = " + maxLong);
+            // Console.WriteLine("minLong = " + minLong);
         }
+
+
 
         /// <summary>
         /// Ustawienia
@@ -56,11 +58,13 @@ namespace Hello
             }
             else if (result == false)
             {
-                Console.WriteLine("Wprowadziłeś niewłaściwy wiek zdziro.");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Wprowadziłeś niewłaściwy wiek.");
 
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Możemy Ci zaoferować mleko");
             }
         }
