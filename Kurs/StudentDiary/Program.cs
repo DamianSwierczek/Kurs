@@ -11,43 +11,37 @@ namespace StudentDiary
         static void Main(string[] args)
         {
             Diary diary = new Diary();
-            //  diary.AddRating(5);
-            //  diary.AddRating(8.5f);
-            //  diary.AddRating(4.7f);
+             diary.AddRating(5);
+             diary.AddRating(8.5f);
+             diary.AddRating(4.7f);
+             diary.AddRating(1.2f);
+             diary.AddRating(3.5f);
 
-            // float avg = diary.CalculateAverage();
-            // float max = diary.GiveMaxRating();
-            // float min = diary.GiveMinRating();
+            DiaryStatistics stats = diary.ComputeStatistics();
 
-            for (; ;)
-            {
-                Console.WriteLine("Podaj ocenę z zakresu 1 - 10: ");
-                float rating;
+            Console.WriteLine("Srednia ocena: " + stats.AverageGrade);
+            Console.WriteLine("Maksymalna ocena: " + stats.MaxGrade);
+            Console.WriteLine("Minimalna ocena: " + stats.MinGrade);
 
-                bool result = float.TryParse(Console.ReadLine(), out rating);
-            
-                if(rating == 11)
-                {
-                    break;
-                }
-            if (result == true)
-            {
-                    if (rating >= 1 && <= 10) { 
-                        diary.AddRating(rating);
-                                              }
-                    else
-                    {
-                        Console.WriteLine("Niepoprawna liczba. Podaj liczbę z zakresu 1-10!");
-                    }
-                }
+            Diary diary2 = new Diary();
 
-            }
-            Console.WriteLine("Średnia twoich ocen to: " + diary.CalculateAverage());
-            Console.WriteLine("Najwyższa ocena to: " + diary.GiveMaxRating());
-            Console.WriteLine("Najniższa ocena to: " + diary.GiveMinRating());
-            Console.ReadKey();
+            diary2.AddRating(5);
+            diary2.AddRating(2);
+            diary2.AddRating(6);
+            diary2.AddRating(8);
+            diary2.AddRating(9);
 
+            stats = diary2.ComputeStatistics();
 
+            Console.WriteLine("Srednia ocena: " + stats.AverageGrade);
+            Console.WriteLine("Maksymalna ocena: " + stats.MaxGrade);
+            Console.WriteLine("Minimalna ocena: " + stats.MinGrade);
+
+            Console.ReadLine();
+
+           
         }
+        
     }
+
 }
