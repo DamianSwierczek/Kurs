@@ -27,8 +27,7 @@ namespace Zadania
             if (r < 0)
             {
                 Console.WriteLine("Ujemny argument!");
-                Console.WriteLine("Wciśnij dowolny klawisz, aby rozpocząć jeszcze raz");
-                Console.ReadKey();
+                Console.ReadLine();
                 Console.Clear();
                 goto Start;
                     
@@ -38,8 +37,7 @@ namespace Zadania
             else if (promien == false)
             {
                 Console.WriteLine("Wprowadziłeś niewłaściwy znak");
-                Console.WriteLine("Wciśnij dowolny klawisz, aby rozpocząć jeszcze raz");
-                Console.ReadKey();
+                Console.ReadLine();
                 Console.Clear();
                 goto Start;
                     
@@ -55,8 +53,7 @@ namespace Zadania
             if (L < 0)
             {
                 Console.WriteLine("Ujemny argument!");
-                Console.WriteLine("Wciśnij dowolny klawisz, aby rozpocząć jeszcze raz");
-                Console.ReadKey();
+                Console.ReadLine();
                 Console.Clear();
                 goto Start;
                     
@@ -65,18 +62,16 @@ namespace Zadania
             else if (tworzaca == false)
             {
                 Console.WriteLine("Wprowadziłeś niewłaściwy znak");
-                Console.WriteLine("Wciśnij dowolny klawisz, aby rozpocząć jeszcze raz");
-                Console.ReadKey();
+                Console.ReadLine();
                 Console.Clear();
                 goto Start;
                     
 
                 }
-            if (r >= L)
+            if (r > L)
             {
                 Console.WriteLine("Obiekt nie istnieje!");
-                Console.WriteLine("Wciśnij dowolny klawisz, aby rozpocząć jeszcze raz");
-                Console.ReadKey();
+                Console.ReadLine();
                 Console.Clear();
                 goto Start;
                     
@@ -97,17 +92,20 @@ namespace Zadania
                 double objetosc;
                 objetosc = (1 / 3.0) * Math.PI * r * r * H;
 
-                // WYNIKI
+                // WYNIKI - OBLICZENIA
 
                 double gorna = objetosc;
-                gorna = Convert.ToInt32(gorna);
-                double dolna = gorna - 1;
-                dolna = Convert.ToInt32(dolna);
+                Math.Ceiling(gorna);
+                //gorna = Convert.ToInt32(gorna);
+                double dolna = gorna;
+                Math.Floor(dolna);
+                //dolna = Convert.ToInt32(dolna);
+
+                //WYNIKI
 
                 Console.WriteLine("Dolna granica wynosi objętości wynosi: " + dolna);
                 Console.WriteLine("Górna granica wynosi objętości wynosi: " + gorna);
-                Console.WriteLine("Wciśnij dowolny klawisz, aby rozpocząć jeszcze raz");
-                Console.ReadKey();
+                Console.ReadLine();
                 Console.Clear();
 
 
