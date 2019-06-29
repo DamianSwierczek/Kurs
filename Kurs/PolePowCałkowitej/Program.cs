@@ -12,10 +12,10 @@ namespace Zadania
         {
             double polePowierzchniCałkowitej = (podstawa * Math.Sqrt(3)) / 4 + (3 * podstawa * wysokość) / 2;
 
-             return polePowierzchniCałkowitej;
+            return polePowierzchniCałkowitej;
 
-         }
-       public static void Mainn(string[] args)
+        }
+        public static void Mainn(string[] args)
         {
             Console.Write("Podaj podstawę i wysokość oddzielone spacją: ");
             string WprowadzonePrzezUżytkownika = Console.ReadLine();
@@ -28,8 +28,8 @@ namespace Zadania
                 Console.WriteLine("Ujemny argument!");
                 return;
             }
-           
-            
+
+
             double wynikDziałania = PolePowCalkOstroslupa(wysokość, podstawa);
             Console.WriteLine("Pole powierzchni całkowitej wynosi " + wynikDziałania);
             Console.ReadLine();

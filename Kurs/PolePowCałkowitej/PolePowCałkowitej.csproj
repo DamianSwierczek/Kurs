@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0B04716-A53C-45A8-B385-A7E7F5857BCE}</ProjectGuid>
+    <ProjectGuid>{85F2BAAA-D572-470E-AAED-76D2DAC7C101}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ZaDuzoZaMalo</RootNamespace>
-    <AssemblyName>ZaDuzoZaMalo</AssemblyName>
+    <RootNamespace>PolePowCałkowitej</RootNamespace>
+    <AssemblyName>PolePowCałkowitej</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

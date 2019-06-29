@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZaDuzoZaMalo", "ZaDuzoZaMal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrzecieZadanie", "TrzecieZadanie\TrzecieZadanie.csproj", "{BE7D0A97-3549-442F-A331-E5DF81F063B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolePowCałkowitej", "PolePowCałkowitej\PolePowCałkowitej.csproj", "{85F2BAAA-D572-470E-AAED-76D2DAC7C101}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BE7D0A97-3549-442F-A331-E5DF81F063B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE7D0A97-3549-442F-A331-E5DF81F063B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE7D0A97-3549-442F-A331-E5DF81F063B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F2BAAA-D572-470E-AAED-76D2DAC7C101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F2BAAA-D572-470E-AAED-76D2DAC7C101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F2BAAA-D572-470E-AAED-76D2DAC7C101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F2BAAA-D572-470E-AAED-76D2DAC7C101}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

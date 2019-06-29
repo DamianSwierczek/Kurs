@@ -20,7 +20,7 @@ namespace GraMonolitycznie
             }
         }
 
-        static public void Mainn(string[] args)
+        static public void Main(string[] args)
         {
             //zmiennne główne
             bool koniecGry = false;
