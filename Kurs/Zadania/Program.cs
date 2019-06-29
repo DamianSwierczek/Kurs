@@ -8,6 +8,7 @@ namespace Zadania
     { 
         static void Main(string[] args)
         {
+            
             string WprowadzonePrzezUżytkownika = Console.ReadLine();
             string[] poSplicie = WprowadzonePrzezUżytkownika.Split(' ');
             double promień = Convert.ToDouble(poSplicie[0]);

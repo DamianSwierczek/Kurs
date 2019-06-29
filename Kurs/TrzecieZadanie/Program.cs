@@ -8,32 +8,33 @@ namespace TrzecieZadanie
 {
     class Program
     {
-      public static void Main(string[] args)
-        {
-            int [,] a = new int[5,4] { { 1, 1, 1, 0 }, { -2, -3, 2, 1}, { -2, -5, 0, -1}, { -3, 4, 6, 2}, { -6, 6, 3, 2} };
-           /* double najniższaŚrednia = 0;
-            double wielkośćPierwszejKolumny = a.GetLength(1);
-            for (int k = 0; k < a.GetLength(1); k++)
+            static double KtoraKolumna(int[,] a)
             {
-                najniższaŚrednia += a[0,k];
-            }
-            double pierwszaŚrednia = najniższaŚrednia / wielkośćPierwszejKolumny;
-            Console.WriteLine(pierwszaŚrednia);*/
-            for (int j = 0; j < a.GetLength(0); j++)
-            {
-                double suma = 0;
-                for (int i = 0; i < a.GetLength(1); i++)
+                double[] srednia = new double[5];
+
+                for (int i = 0; i < 5; i++)
                 {
-                    suma += a[j, i];
+                    srednia[i] = 0;
+                    for (int j = 0; j < 4; j++)
+                    {
+                        srednia[i] += a[i, j];
+                    }
+
+                    srednia[i] /= 4;
                 }
-                double wielkość = a.GetLength(1);
-                double średnia = suma / wielkość;
-                int ktoraKolumna = j + 1;
-                double[] wyniki = new double[a.GetLength(0)];
-                wyniki[j] = średnia;
+                int nrKolumny = Array.IndexOf(srednia, srednia.Min());
+            int kolumna = nrKolumny + 1;
+
+                return kolumna;
             }
-            
+            static void Main(string[] args)
+            {
+                int[,] a = new int[5, 4] { { 1, 1, 1, 0 }, { -2, -3, 2, 1 }, { -12, -50, 0, -1 }, { -3, 4, 6, 2 }, { -6, 6, 3, 4 } };
+
+                Console.WriteLine("numer kolumny z maksymalną sumą = " + KtoraKolumna(a));
             Console.ReadLine();
+            }
         }
+   
     }
-}
+
